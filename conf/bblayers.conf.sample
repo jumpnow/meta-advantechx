@@ -1,0 +1,21 @@
+# POKY_BBLAYERS_CONF_VERSION is increased each time build/conf/bblayers.conf
+# changes incompatibly
+POKY_BBLAYERS_CONF_VERSION = "2"
+
+BBPATH = "${TOPDIR}"
+BBFILES ?= ""
+
+BBLAYERS ?= " \
+  ${HOME}/poky-scarthgap/meta \
+  ${HOME}/poky-scarthgap/meta-poky \
+  ${HOME}/poky-scarthgap/meta-openembedded/meta-oe \
+  ${HOME}/poky-scarthgap/meta-openembedded/meta-multimedia \
+  ${HOME}/poky-scarthgap/meta-openembedded/meta-networking \
+  ${HOME}/poky-scarthgap/meta-openembedded/meta-python \
+  ${HOME}/poky-scarthgap/meta-arm/meta-arm \
+  ${HOME}/poky-scarthgap/meta-arm/meta-arm-bsp \
+  ${HOME}/poky-scarthgap/meta-arm/meta-arm-toolchain \
+  ${HOME}/poky-scarthgap/meta-freescale \
+  ${HOME}/poky-scarthgap/meta-imx/meta-imx-bsp \
+  ${HOME}/advantechx/meta-advantechx \
+"
